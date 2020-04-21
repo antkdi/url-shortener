@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * ClassName : UrlShortDao </br>
  * Descrption :   </br>
  *
- * @author <a href="mailto:antkdi@saramin.co.kr">hyungeun.jung</a>
+ * @author <a href="mailto:antkdi@gmail.com">hyungeun.jung</a>
  * @version 1.0
  */
 

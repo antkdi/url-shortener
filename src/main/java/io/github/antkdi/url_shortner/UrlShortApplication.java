@@ -1,9 +1,12 @@
 package io.github.antkdi.url_shortner;
 
+import io.github.antkdi.url_shortner.controller.ConvertController;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by IntelliJ IDEA on 2020-04-18 12:54 </br>
@@ -17,14 +20,12 @@ import org.springframework.context.annotation.ComponentScan;
  * @version 1.0
  */
 
-@ComponentScan("io.github.antkdi")
 @SpringBootApplication
+@ComponentScan( basePackages = "io.github.antkdi")
 public class UrlShortApplication {
 
     /** Main 메서드 */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(UrlShortApplication.class);
-        app.setBannerMode(Banner.Mode.OFF);
-        app.run(args);
+        SpringApplication.run(UrlShortApplication.class, args);
     }
 }

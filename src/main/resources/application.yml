@@ -3,9 +3,10 @@ spring:
   output:
     ansi:
       enabled: always
-  mustache:
-    suffix: .html
   mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
     static-path-pattern: /static/**
 
 logging:

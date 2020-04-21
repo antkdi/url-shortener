@@ -1,6 +1,6 @@
 #FileLock
-#Sun Apr 19 21:47:20 KST 2020
-hostName=user-PC
-id=171927a8df4a264f49514cae6c868b28f204414297e
+#Wed Apr 22 07:18:43 KST 2020
+server=192.168.0.18\:4868
+hostName=DESKTOP-F2C6EKI
 method=file
-server=172.20.21.128\:5357
+id=1719ed265d33c6b6e4929e83260b7557a536b89d8dc

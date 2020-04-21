@@ -1,8 +1,7 @@
 package io.github.antkdi.url_shortner.service;
 
 import io.github.antkdi.url_shortner.entity.ShortUrl;
-
-import java.util.Map;
+import io.github.antkdi.url_shortner.vo.ShortUrlResult;
 
 /**
  * Created by IntelliJ IDEA on 2020-04-18 14:10 </br>
@@ -12,12 +11,12 @@ import java.util.Map;
  * ClassName : UrlConvertService </br>
  * Descrption :   </br>
  *
- * @author <a href="mailto:antkdi@saramin.co.kr">hyungeun.jung</a>
+ * @author <a href="mailto:antkdi@gmail.com">hyungeun.jung</a>
  * @version 1.0
  */
 
 
 public interface UrlConvertService {
 
-    ShortUrl getShortenUrl(String url) throws Exception;
+    ShortUrlResult getShortenUrl(String url);
 }

@@ -12,7 +12,7 @@ import java.math.BigInteger;
  * ClassName : ShortUrl </br>
  * Descrption :   </br>
  *
- * @author <a href="mailto:antkdi@saramin.co.kr">hyungeun.jung</a>
+ * @author <a href="mailto:antkdi@gmail.com">hyungeun.jung</a>
  * @version 1.0
  */
 
@@ -32,5 +32,6 @@ public class ShortUrl {
     private String originUrl;
     @Column(name= "req_count")
     private long reqCount;
+
 
 }

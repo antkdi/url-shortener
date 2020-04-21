@@ -1,8 +1,8 @@
 
 CREATE TABLE  IF NOT EXISTS SHORT_URL (
   seq INT AUTO_INCREMENT  PRIMARY KEY,
-  short_url VARCHAR(250),
-  origin_url VARCHAR(250) NOT NULL,
+  short_url VARCHAR(100),
+  origin_url VARCHAR(2000) NOT NULL,
   req_count INT DEFAULT 1
 );
 

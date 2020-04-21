@@ -1349,3 +1349,6 @@ select shorturl0_.seq as col_0_0_ from short_url shorturl0_ where shorturl0_.sho
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
+2020-04-22 05:43:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "ORIGIN_URL VARCHAR(250)": "'http://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=38019520&recommend_ids=eJxNz7kRA1EIA9BqnHMJidiF%2FP678DVeN... (397)"; SQL statement:
+insert into short_url (origin_url, req_count, short_url, seq) values (?, ?, ?, ?) [22001-200]
