@@ -1,0 +1,38 @@
+### Git
+
+### Gradle
+.gradle
+/build/
+/gradle/
+!gradle/wrapper/gradle-wrapper.jar
+### Class File ###
+/bin
+/out
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+## MAVEN
+/target/
+
+## Custom
+sai-dumper-local.xml
+

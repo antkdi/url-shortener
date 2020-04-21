@@ -1,0 +1,68 @@
+
+spring:
+  output:
+    ansi:
+      enabled: always
+  mustache:
+    suffix: .html
+  mvc:
+    static-path-pattern: /static/**
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR
+
+---
+
+spring:
+  profiles:
+    active: local
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: false
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /test_db
+
+  datasource:
+    data: classpath:/schema.sql
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./test_db;AUTO_SERVER=TRUE
+    username: test
+    password: 1234
+## hsql:
+##   datasource:
+##     ## hikariCP 사용일때 url -> jdbc-url
+##     jdbc-url: jdbc:hsqldb:file:./db/testdb;shutdown=true
+##     username: sa
+##     password:
+##     driver-class-name: org.hsqldb.jdbcDriver
+##     connection-timeout: 60000
+##     maximum-pool-size: 5
+
+---
+
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles:
+    active: stg
+
+---
+
+spring:
+  profiles:
+    active: prdt
