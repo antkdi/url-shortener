@@ -12,8 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-
 /**
  * Created by IntelliJ IDEA on 2020-04-18 14:11 </br>
  * PROJECT : "url-shortner"  </br>
@@ -41,6 +39,14 @@ public class UrlConvertServiceImpl implements UrlConvertService {
         this.urlShortDao = urlShortDao;
     }
 
+
+    /**
+     * Url을 입력 받아 신규 데이터인 경우 줄임 처리 / 저장 후 반환
+     * 기존의 데이터인 경우 원본 으로 변경 후 반환
+     * 카운트++
+     * @param url
+     * @return
+     */
     @Transactional(rollbackFor = Exception.class)
     @Override
     public ShortUrlResult getShortenUrl(String url) {
@@ -49,13 +55,13 @@ public class UrlConvertServiceImpl implements UrlConvertService {
         ShortUrl shortUrl = new ShortUrl();
         if(!url.isEmpty() && commonUtils.urlValidationCheck(url)){
 
-
             if(urlShortDao.exists(url)){
                 shortUrl = urlShortDao.findByUrl(url);
                 shortUrlResult.setShortUrlType(shortUrl.getShortUrl().equals(url) ? ShortUrlType.ORIGIN:ShortUrlType.SHORT);
                 shortUrl.setReqCount(shortUrl.getReqCount()+1);
                 shortUrlResult.setShortUrl(shortUrl);
                 shortUrlResult.setShortUrlType(ShortUrlType.ORIGIN);
+
             }else{
 
                 //save Object

@@ -3,10 +3,7 @@ package io.github.antkdi.url_shortner.module;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
-import java.util.NoSuchElementException;
 
 
 /**
@@ -29,7 +26,7 @@ public class UrlEncoder {
     private final int BASE62 = 62;
     private final String BASE62_CHAR = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    public String encoding(long param) {
+    private String encoding(long param) {
         StringBuffer sb = new StringBuffer();
         while(param > 0) {
             sb.append(BASE62_CHAR.charAt((int) (param % BASE62)));
@@ -38,7 +35,7 @@ public class UrlEncoder {
         return URL_PREFIX + sb.toString();
     }
 
-    public long decoding(String param) {
+    private long decoding(String param) {
         long sum = 0;
         long power = 1;
         for (int i = 0; i < param.length(); i++) {

@@ -6,8 +6,11 @@ import lombok.Data;
 @Data
 public class ShortUrlResult {
 
+    //url Entity
     private ShortUrl shortUrl;
+    //result Data
     private ShortUrlType shortUrlType;
+    //flag
     private boolean successFlag;
 }
 

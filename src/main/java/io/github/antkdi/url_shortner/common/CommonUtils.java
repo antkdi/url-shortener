@@ -18,6 +18,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class CommonUtils {
 
+    /**
+     * Url을 입력받아 url 형식인지 판단한다.
+     * @param urlStr
+     * @return
+     */
     public boolean urlValidationCheck(String urlStr){
         return new UrlValidator().isValid(urlStr);
     }

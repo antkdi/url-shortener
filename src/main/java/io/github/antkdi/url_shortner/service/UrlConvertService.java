@@ -1,6 +1,5 @@
 package io.github.antkdi.url_shortner.service;
 
-import io.github.antkdi.url_shortner.entity.ShortUrl;
 import io.github.antkdi.url_shortner.vo.ShortUrlResult;
 
 /**

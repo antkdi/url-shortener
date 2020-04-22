@@ -1,12 +1,8 @@
 package io.github.antkdi.url_shortner;
 
-import io.github.antkdi.url_shortner.controller.ConvertController;
-import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by IntelliJ IDEA on 2020-04-18 12:54 </br>

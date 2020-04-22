@@ -1,14 +1,10 @@
 package io.github.antkdi.url_shortner.controller;
 
-import io.github.antkdi.url_shortner.entity.ShortUrl;
 import io.github.antkdi.url_shortner.service.UrlConvertService;
 import io.github.antkdi.url_shortner.vo.ShortUrlResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Slf4j
 @CrossOrigin
@@ -22,7 +18,13 @@ public class ConvertController {
         this.urlConvertService = urlConvertService;
     }
 
-    @GetMapping(value = "/rest/convert")
+    /**
+     * API 컨트롤러
+     * @param urlStr
+     * @return
+     */
+    @GetMapping(value = "/rest/convert", produces = {"application/json"})
+    @ResponseBody
     ShortUrlResult convert(@RequestParam(defaultValue = "") String urlStr) {
         return urlConvertService.getShortenUrl(urlStr.trim());
     }
