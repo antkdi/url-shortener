@@ -3,8 +3,7 @@
 ### Gradle
 .gradle
 /build/
-/gradle/
-!gradle/wrapper/gradle-wrapper.jar
+
 ### Class File ###
 /bin
 /out
