@@ -13,14 +13,16 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-//application {
-//    mainClassName = 'io.github.antkdi.url_shortner.ServletInitializer'
-//}
 
-//bootJar{
-//    archiveBaseName = 'url-shortner'
-//    archiveVersion = "0.0.1"
-//}
+bootWar{
+    archivesBaseName = 'url-shortner'
+    archiveName = 'url-shortner.war'
+}
+
+bootJar{
+    archivesBaseName = 'url-shortner'
+    archiveName = 'url-shortner.jar'
+}
 
 repositories {
     mavenCentral()
@@ -35,7 +37,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.12.2'
 
-    compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+    providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile('javax.servlet:jstl:1.2')
 
 

@@ -16,12 +16,12 @@ import org.springframework.context.annotation.ComponentScan;
  * @version 1.0
  */
 
-@SpringBootApplication
-@ComponentScan( basePackages = "io.github.antkdi")
-public class UrlShortApplication {
-
-    /** Main 메서드 */
-    public static void main(String[] args) {
-        SpringApplication.run(UrlShortApplication.class, args);
-    }
-}
+//@SpringBootApplication
+//@ComponentScan( basePackages = "io.github.antkdi")
+//public class UrlShortApplication {
+//
+//    /** Main 메서드 */
+//    public static void main(String[] args) {
+//        SpringApplication.run(UrlShortApplication.class, args);
+//    }
+//}
