@@ -5,8 +5,7 @@
 - [1.Subject](#1subject)
 - [2.Environment](#2environment)
 - [3.Install](#3install)
-- [4. Usage](#4-usage)
-- [2.Environment](#2environment-1)
+- [4. Usage](#4usage)
 
 
 
@@ -45,7 +44,7 @@ URL을 입력받아 짧게 줄여주고, Shortening된 URL을 입력하면 원�
 
     
 
-## 4. Usage
+## 4.Usage
 
   - Build
 
