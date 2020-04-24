@@ -57,16 +57,3 @@ URL을 입력받아 짧게 줄여주고, Shortening된 URL을 입력하면 원�
 
     
 
- ## 2.Environment 
-
-  - JDK 1.8
-  - InteliJ
-  - Gradle 4.10.3
-  - lombok 1.18.6
-  - JPA / Hibernate
-  - Spring boot 2.2.2.RELEASE
-  - Junit (SpringBootTest)
-  - H2 Database 
-  - JSP
-
- 
