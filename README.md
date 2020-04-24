@@ -15,7 +15,7 @@
   - Execute
     - `$ java -jar ./build/libs/url-shortner.war`
     
- ## Development 
+ ## Environment 
   - JDK 1.8
   - InteliJ
   - Gradle 4.10.3
@@ -23,7 +23,7 @@
   - JPA / Hibernate
   - Spring boot 2.2.2.RELEASE
   - Junit (SpringBootTest)
-  - H2 Database
+  - H2 Database 
   - JSP
   
  
