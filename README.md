@@ -55,4 +55,6 @@ URL을 입력받아 짧게 줄여주고, Shortening된 URL을 입력하면 원�
     - `$ java -jar ./build/libs/url-shortner.war`
 
     
-
+## 5. Blog 
+  - [Spring Boot 로 완성하는 URL Shortener 1](https://antkdi.github.io/programing/java/post_url-shortener_1/)
+  - [Spring Boot 로 완성하는 URL Shortener 2](https://antkdi.github.io/programing/java/post_url-shortener_2/)
